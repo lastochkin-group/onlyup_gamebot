@@ -10,8 +10,13 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1.0, user-scalable=no' }
       ],
       script: [
-        { src: "https://telegram.org/js/telegram-web-app.js" }
-      ],
+        {
+          src: "https://telegram.org/js/telegram-web-app.js",
+          type: "text/javascript",
+          async: true,
+          onload: "window.Telegram?.WebApp?.expand(); window.Telegram?.WebApp?.disableVerticalSwipes();"
+        }
+      ]
     },
   },
   i18n: {

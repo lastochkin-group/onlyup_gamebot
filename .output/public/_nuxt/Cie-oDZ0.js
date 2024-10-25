@@ -1,1 +1,0 @@
-import{_ as t}from"./DlAUqK2U.js";import{c as o,D as a,o as r}from"./DEn9cQd8.js";const s={},c={id:"tma",class:"container py-6 gameView"};function n(e,_){return r(),o("main",c,[a(e.$slots,"default")])}const l=t(s,[["render",n]]);export{l as default};

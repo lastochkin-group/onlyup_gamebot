@@ -101,7 +101,7 @@ const unheadPlugins = true ? [CapoPlugin({ track: true })] : [];
 
 const renderSSRHeadOptions = {"omitLineBreaks":false};
 
-const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, user-scalable=no"}],"link":[],"style":[],"script":[{"src":"https://telegram.org/js/telegram-web-app.js"}],"noscript":[]};
+const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, user-scalable=no"}],"link":[],"style":[],"script":[{"src":"https://telegram.org/js/telegram-web-app.js","type":"text/javascript","async":true,"onload":"window.Telegram?.WebApp?.expand(); window.Telegram?.WebApp?.disableVerticalSwipes();"}],"noscript":[]};
 
 const appRootTag = "div";
 

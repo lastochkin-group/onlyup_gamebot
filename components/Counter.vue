@@ -26,7 +26,7 @@ const grayDigits = computed(() => {
   <div class="flex justify-center items-center flex-col gap-y-2">
     <div class="text-[70px] font-extrabold flex leading-none">
         <div v-for="(digit, index) in formattedValue" :key="index">
-        <span :class="{ 'text-hint_color': index < grayDigits }">{{ digit }}</span>
+        <span :class="{ 'opacity-10': index < grayDigits }">{{ digit }}</span>
         </div>
     </div>
 

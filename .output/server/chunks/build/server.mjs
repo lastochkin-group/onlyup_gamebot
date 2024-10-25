@@ -1,4 +1,4 @@
-import { version, unref, inject, defineComponent, h, getCurrentInstance, computed, ref, provide, shallowReactive, watch, Suspense, nextTick, Fragment, Transition, hasInjectionContext, mergeProps, createApp, effectScope, reactive, getCurrentScope, shallowRef, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, useSSRContext, toRef, withCtx, defineAsyncComponent, isReadonly, Text, isRef, isShallow, isReactive, toRaw } from 'vue';
+import { version, unref, inject, defineComponent, h, getCurrentInstance, computed, ref, provide, shallowReactive, watch, Suspense, nextTick, Fragment, Transition, hasInjectionContext, mergeProps, useSSRContext, createApp, effectScope, reactive, getCurrentScope, shallowRef, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, toRef, defineAsyncComponent, isReadonly, Text, withCtx, isRef, isShallow, isReactive, toRaw } from 'vue';
 import { $ as $fetch, l as defu, m as sanitizeStatusCode, n as createHooks, h as createError$1, t as toRouteMatcher, o as createRouter$1, p as getRequestHeaders, q as klona, r as parse$1, v as getRequestHeader, w as destr, x as isEqual$1, y as setCookie, z as getCookie, A as deleteCookie } from '../runtime.mjs';
 import { b as baseURL } from '../routes/renderer.mjs';
 import { getActiveHead, CapoPlugin } from 'unhead';
@@ -911,22 +911,22 @@ const _routes = [
   {
     name: "drop___en",
     path: "/drop",
-    component: () => import('./drop-Bnb79kg2.mjs')
+    component: () => import('./drop-D6P1S2rj.mjs')
   },
   {
     name: "frens___en",
     path: "/frens",
-    component: () => import('./frens-C2Lk9I0P.mjs')
+    component: () => import('./frens-LrPJVMCx.mjs')
   },
   {
     name: "game___en",
     path: "/game",
-    component: () => import('./game-BFPjbAHX.mjs')
+    component: () => import('./game-DjzLkuQN.mjs')
   },
   {
     name: "index___en",
     path: "/",
-    component: () => import('./index-DgIYXQhu.mjs')
+    component: () => import('./index-C3xu4itJ.mjs')
   },
   {
     name: "onboarding___en",
@@ -936,7 +936,7 @@ const _routes = [
   {
     name: "players___en",
     path: "/players",
-    component: () => import('./players-5KaNILP4.mjs')
+    component: () => import('./players-CkLSTM3k.mjs')
   },
   {
     name: "store___en",
@@ -951,7 +951,7 @@ const _routes = [
   {
     name: "teams___en",
     path: "/teams",
-    component: () => import('./teams-CeAHqSS6.mjs')
+    component: () => import('./teams-CHq4IGvh.mjs')
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -6887,7 +6887,7 @@ const plugins = [
   telegram_NrpopEC7aI
 ];
 const layouts = {
-  default: () => import('./default-EJMf9_L3.mjs')
+  default: () => import('./default-B9Eh9CLJ.mjs')
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",
@@ -7130,35 +7130,37 @@ function hasChildrenRoutes(fork, newRoute, Component) {
   });
   return index < newRoute.matched.length - 1;
 }
-const _sfc_main$2 = {
-  __name: "app",
-  __ssrInlineRender: true,
-  setup(__props) {
-    useNuxtApp().$webapp;
-    return (_ctx, _push, _parent, _attrs) => {
-      const _component_NuxtLayout = __nuxt_component_0;
-      const _component_NuxtPage = __nuxt_component_1;
-      _push(ssrRenderComponent(_component_NuxtLayout, _attrs, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(ssrRenderComponent(_component_NuxtPage, null, null, _parent2, _scopeId));
-          } else {
-            return [
-              createVNode(_component_NuxtPage)
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-    };
+const _export_sfc = (sfc, props) => {
+  const target = sfc.__vccOpts || sfc;
+  for (const [key, val] of props) {
+    target[key] = val;
   }
+  return target;
 };
+const _sfc_main$2 = {};
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  const _component_NuxtLayout = __nuxt_component_0;
+  const _component_NuxtPage = __nuxt_component_1;
+  _push(ssrRenderComponent(_component_NuxtLayout, _attrs, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_NuxtPage, null, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_NuxtPage)
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+}
 const _sfc_setup$2 = _sfc_main$2.setup;
 _sfc_main$2.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("app.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
+const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender]]);
 const _sfc_main$1 = {
   __name: "nuxt-error-page",
   __ssrInlineRender: true,
@@ -7180,8 +7182,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./error-404-Cq3kkMPB.mjs'));
-    const _Error = defineAsyncComponent(() => import('./error-500-DInopJ6m.mjs'));
+    const _Error404 = defineAsyncComponent(() => import('./error-404-BXUTGC6X.mjs'));
+    const _Error = defineAsyncComponent(() => import('./error-500-Bp5diZnT.mjs'));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));
@@ -7228,7 +7230,7 @@ const _sfc_main = {
           } else if (unref(SingleRenderer)) {
             ssrRenderVNode(_push, createVNode(resolveDynamicComponent(unref(SingleRenderer)), null, null), _parent);
           } else {
-            _push(ssrRenderComponent(unref(_sfc_main$2), null, null, _parent));
+            _push(ssrRenderComponent(unref(AppComponent), null, null, _parent));
           }
         },
         _: 1
@@ -7262,5 +7264,5 @@ let entry;
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
 
-export { useRouter as a, resolveRouteObject as b, navigateTo as c, useRuntimeConfig as d, entry$1 as default, withoutTrailingSlash as e, hasProtocol as h, injectHead as i, joinURL as j, nuxtLinkDefaults as n, parseQuery as p, resolveUnrefHeadInput as r, useNuxtApp as u, withTrailingSlash as w };
+export { _export_sfc as _, useRouter as a, resolveRouteObject as b, navigateTo as c, useRuntimeConfig as d, entry$1 as default, withoutTrailingSlash as e, hasProtocol as h, injectHead as i, joinURL as j, nuxtLinkDefaults as n, parseQuery as p, resolveUnrefHeadInput as r, useNuxtApp as u, withTrailingSlash as w };
 //# sourceMappingURL=server.mjs.map

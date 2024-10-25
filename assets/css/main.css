@@ -15,7 +15,7 @@ body {
 
 .gameView {
     overflow-y: scroll;
-    height: var(--tg-viewport-stable-height, 100vh);
+    height: 100vh;
     scrollbar-width: none;
 }
 
